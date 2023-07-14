@@ -1,0 +1,1 @@
+export const authCookie = process.env.AUTH_COOKIE ?? "";

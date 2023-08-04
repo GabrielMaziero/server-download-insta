@@ -1,8 +1,9 @@
-import { BadRequest } from "@/exceptions";
-import { axiosFetch, getHeaders } from "@/lib/utils";
-import { FetchPostProps, VideoJson } from "@/types";
-import { PostVideo } from "@/types/instagramScraper";
+
 import { load } from 'cheerio';
+import { BadRequest } from '../../exceptions';
+import { PostVideo } from '../../types/instagramScraper';
+import { FetchPostProps, VideoJson } from '../../types';
+import { axiosFetch, getHeaders } from '../utils';
 
 const formatPageJson = (json: any) => {
   let scrapedPost;

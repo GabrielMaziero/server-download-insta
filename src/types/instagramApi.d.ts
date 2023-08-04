@@ -5,6 +5,7 @@
 export type IGUserResponse = {
   require_login?: boolean;
   graphql?: any;
+  // @ts-ignore
   items: Item[];
   num_results: number;
   more_available: boolean;
@@ -356,6 +357,7 @@ export type GuestResponse = {
 };
 
 export type Graphql = {
+  // @ts-ignore
   shortcode_media: ShortcodeMedia;
 };
 

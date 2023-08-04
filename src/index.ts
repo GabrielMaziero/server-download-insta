@@ -1,8 +1,10 @@
 import express, { Request, Response, response } from 'express'
 import { Exception } from './exceptions';
 import { fetchPostJson, getPostId } from './lib/instagram';
+require('dotenv').config();
+
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 function handleError(error: any) {
   if (error instanceof Exception) {

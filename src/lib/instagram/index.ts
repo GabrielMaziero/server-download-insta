@@ -1,8 +1,9 @@
-import { BadRequest } from "@/exceptions";
-import { fetchFromAPI } from "@/lib/instagram/instagramApi";
-import { fetchFromPage } from "@/lib/instagram/instagramScraper";
-import { axiosFetch, getHeaders } from "@/lib/utils";
-import { FetchPostProps } from "@/types";
+import { BadRequest } from "../../exceptions";
+import { FetchPostProps } from "../../types";
+import { axiosFetch, getHeaders } from "../utils";
+import { fetchFromAPI } from "./instagramApi";
+import { fetchFromPage } from "./instagramScraper";
+
 
 export const getPostId = (postUrl: string | null) => {
   const postRegex =

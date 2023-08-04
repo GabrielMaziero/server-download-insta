@@ -1,8 +1,8 @@
-import { authCookie } from "@/configs/instagram";
-import { BadRequest } from "@/exceptions";
-import { axiosFetch, getHeaders } from "@/lib/utils";
-import { FetchPostProps, VideoJson } from "@/types";
-import { GuestPostJson, GuestResponse, IGUserPostJson, IGUserResponse } from "@/types/instagramApi";
+import { authCookie } from "../../configs/instagram";
+import { BadRequest } from "../../exceptions";
+import { FetchPostProps, VideoJson } from "../../types";
+import { GuestPostJson, GuestResponse, IGUserPostJson, IGUserResponse } from "../../types/instagramApi";
+import { axiosFetch, getHeaders } from "../utils";
 
 const isValidCookie = (cookieString: string) => {
   const cookiesToCheck = [

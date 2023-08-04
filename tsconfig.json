@@ -8,11 +8,6 @@
     "allowJs": true,
     "outDir": "build",
     "rootDir": "src",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,

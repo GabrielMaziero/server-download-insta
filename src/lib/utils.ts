@@ -1,6 +1,6 @@
-import { TimeoutException } from "@/exceptions";
-import { AxiosFetchProps } from "@/types";
 import axios from "axios";
+import { AxiosFetchProps } from "../types";
+import { TimeoutException } from "../exceptions";
 
 const userAgents = [
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36",

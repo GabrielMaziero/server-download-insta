@@ -19,6 +19,8 @@ function handleError(error: any) {
 
 app.get('/', async (request: Request, response: Response) => {
   const { url } = request.query
+  console.log("🚀 ~ file: index.ts:22 ~ app.get ~  request.query:",  request.query);
+  console.log("🚀 ~ file: index.ts:22 ~ app.get ~ url:", url);
 
   let postId;
 

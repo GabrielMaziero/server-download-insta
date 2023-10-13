@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16"
+  },
   "scripts": {
     "start:dev": "npx nodemon",
     "build": "tsc",

@@ -17,14 +17,15 @@ export const getRandomUserAgent = () => {
   return userAgents[Math.floor(Math.random() * userAgents.length)];
 };
 
-export const getHeaders = (cookie?: string) => {
+export const getHeaders = () => {
   const HEADERS = {
-    "User-Agent": getRandomUserAgent(),
-    Cookie: cookie ?? "",
-    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-us,en;q=0.5",
-    "Sec-Fetch-Mode": "navigate",
-    Referer: "https://www.instagram.com/",
+    accept:
+      "*/*, text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8",
+    host: "www.instagram.com",
+    referer: "https://www.instagram.com/",
+    DNT: "1",
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299",
   };
 
   return HEADERS;
